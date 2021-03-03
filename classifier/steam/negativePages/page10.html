@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+
+<html class="responsive" lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#171a21" name="theme-color"/>
+<title>Steam Labs</title>
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="https://store.cloudflare.steamstatic.com/public/shared/css/motiva_sans.css?v=2C1Oh9QFVTyK&amp;l=english&amp;_cdn=cloudflare" rel="stylesheet" type="text/css"/>
+<link href="https://store.cloudflare.steamstatic.com/public/shared/css/shared_global.css?v=ulUpDG32RsnD&amp;l=english&amp;_cdn=cloudflare" rel="stylesheet" type="text/css"/>
+<link href="https://store.cloudflare.steamstatic.com/public/shared/css/buttons.css?v=hFJKQ6HV7IKT&amp;l=english&amp;_cdn=cloudflare" rel="stylesheet" type="text/css"/>
+<link href="https://store.cloudflare.steamstatic.com/public/css/v6/store.css?v=krPa2NhidPYR&amp;l=english&amp;_cdn=cloudflare" rel="stylesheet" type="text/css"/>
+<link href="https://store.cloudflare.steamstatic.com/public/css/labs.css?v=o0DYatZozPtZ&amp;l=english&amp;_cdn=cloudflare" rel="stylesheet" type="text/css"/>
+<link href="https://store.cloudflare.steamstatic.com/public/shared/css/shared_responsive.css?v=z-4Kq1-12quC&amp;l=english&amp;_cdn=cloudflare" rel="stylesheet" type="text/css"/>
+<script>
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+						(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+				ga('create', 'UA-33786258-1', 'auto', {
+					'sampleRate': 0.4				});
+				ga('set', 'dimension1', false );
+				ga('set', 'dimension2', 'External' );
+				ga('set', 'dimension3', 'labs' );
+				ga('set', 'dimension4', "labs\/home" );
+				ga('send', 'pageview' );
+
+			</script>
+<script type="text/javascript">Object.seal && Object.seal( Object.prototype );</script><script src="https://store.cloudflare.steamstatic.com/public/shared/javascript/jquery-1.8.3.min.js?v=.TZ2NKhB-nliU&amp;_cdn=cloudflare" type="text/javascript"></script>
+<script type="text/javascript">$J = jQuery.noConflict();</script><script type="text/javascript">VALVE_PUBLIC_PATH = "https:\/\/store.cloudflare.steamstatic.com\/public\/";</script><script src="https://store.cloudflare.steamstatic.com/public/shared/javascript/tooltip.js?v=.9Z1XDV02xrml&amp;_cdn=cloudflare" type="text/javascript"></script>
+<script src="https://store.cloudflare.steamstatic.com/public/shared/javascript/shared_global.js?v=-Mm5fR1B5hjP&amp;l=english&amp;_cdn=cloudflare" type="text/javascript"></script>
+<script src="https://store.cloudflare.steamstatic.com/public/javascript/main.js?v=zcmDPdqLKz02&amp;l=english&amp;_cdn=cloudflare" type="text/javascript"></script>
+<script src="https://store.cloudflare.steamstatic.com/public/javascript/dynamicstore.js?v=w-N0oxq9nWdp&amp;l=english&amp;_cdn=cloudflare" type="text/javascript"></script>
+<script type="text/javascript">
+	var __PrototypePreserve=[];
+	__PrototypePreserve[0] = Array.from;
+	__PrototypePreserve[1] = Function.prototype.bind;
+</script>
+<script src="https://store.cloudflare.steamstatic.com/public/javascript/prototype-1.7.js?v=.a38iP7Khdmyy&amp;_cdn=cloudflare" type="text/javascript"></script>
+<script type="text/javascript">
+	Array.from = __PrototypePreserve[0] || Array.from;
+	Function.prototype.bind = __PrototypePreserve[1] || Function.prototype.bind;
+</script>
+<script src="https://store.cloudflare.steamstatic.com/public/javascript/scriptaculous/_combined.js?v=Me1IBxzktiwk&amp;l=english&amp;_cdn=cloudflare&amp;load=effects,controls,slider" type="text/javascript"></script>
+<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function(event) {
+				$J.data( document, 'x_readytime', new Date().getTime() );
+				$J.data( document, 'x_oldref', GetNavCookie() );
+				SetupTooltips( { tooltipCSSClass: 'store_tooltip'} );
+		});
+		</script><script src="https://store.cloudflare.steamstatic.com/public/javascript/youraccount.js?v=G4bWsUEfjlTd&amp;l=english&amp;_cdn=cloudflare" type="text/javascript"></script>
+<script src="https://store.cloudflare.steamstatic.com/public/shared/javascript/dselect.js?v=yT8Q5U2-O4wX&amp;l=english&amp;_cdn=cloudflare" type="text/javascript"></script>
+<script src="https://store.cloudflare.steamstatic.com/public/shared/javascript/shared_responsive_adapter.js?v=pVvZxRnSFjnX&amp;l=english&amp;_cdn=cloudflare" type="text/javascript"></script>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="A peek at some of the many experiments we put together around discoverability, video, machine learning, and more." name="Description"/>
+<meta content="@steam" name="twitter:site">
+<meta content="Steam Labs" property="og:title"/>
+<meta content="Steam Labs" property="twitter:title"/>
+<meta content="website" property="og:type"/>
+<meta content="105386699540688" property="fb:app_id"/>
+<meta content="Steam" property="og:site"/>
+<meta content="A peek at some of the many experiments we put together around discoverability, video, machine learning, and more." property="og:description"/>
+<meta content="A peek at some of the many experiments we put together around discoverability, video, machine learning, and more." property="twitter:description"/>
+<link href="https://cdn.cloudflare.steamstatic.com/store/labs/labs_share_image.jpg" rel="image_src"/>
+<meta content="https://cdn.cloudflare.steamstatic.com/store/labs/labs_share_image.jpg" property="og:image"/>
+<meta content="https://cdn.cloudflare.steamstatic.com/store/labs/labs_share_image.jpg" name="twitter:image">
+</meta></meta></head>
+<body class="v6 labs responsive_page">
+<div class="responsive_page_frame with_header">
+<div class="responsive_page_menu_ctn mainmenu">
+<div class="responsive_page_menu" id="responsive_page_menu">
+<div class="mainmenu_contents">
+<div class="mainmenu_contents_items">
+<a class="menuitem" href="https://store.steampowered.com/login/?redir=labs%2F&amp;redir_ssl=1&amp;snr=1_2500_4__global-header">
+									Login								</a>
+<a class="menuitem supernav" data-tooltip-content=".submenu_store" data-tooltip-type="selector" href="https://store.steampowered.com/?snr=1_2500_4__global-responsive-menu">
+		Store	</a>
+<div class="submenu_store" data-submenuid="store" style="display: none;">
+<a class="submenuitem" href="https://store.steampowered.com/?snr=1_2500_4__global-responsive-menu">Home</a>
+<a class="submenuitem" href="https://store.steampowered.com/explore/?snr=1_2500_4__global-responsive-menu">Discovery Queue</a>
+<a class="submenuitem" href="https://steamcommunity.com/my/wishlist/">Wishlist</a>
+<a class="submenuitem" href="https://store.steampowered.com/points/shop/?snr=1_2500_4__global-responsive-menu">Points Shop</a>
+<a class="submenuitem" href="https://store.steampowered.com/news/?snr=1_2500_4__global-responsive-menu">News</a>
+<a class="submenuitem" href="https://store.steampowered.com/stats/?snr=1_2500_4__global-responsive-menu">Stats</a>
+</div>
+<a class="menuitem supernav" data-tooltip-content=".submenu_community" data-tooltip-type="selector" href="https://steamcommunity.com/" style="display: block">
+			Community		</a>
+<div class="submenu_community" data-submenuid="community" style="display: none;">
+<a class="submenuitem" href="https://steamcommunity.com/">Home</a>
+<a class="submenuitem" href="https://steamcommunity.com/discussions/">Discussions</a>
+<a class="submenuitem" href="https://steamcommunity.com/workshop/">Workshop</a>
+<a class="submenuitem" href="https://steamcommunity.com/market/">Market</a>
+<a class="submenuitem" href="https://steamcommunity.com/?subsection=broadcasts">Broadcasts</a>
+</div>
+<a class="menuitem" href="https://help.steampowered.com/en/">
+		Support	</a>
+<div class="minor_menu_items">
+<div class="menuitem change_language_action">
+									Change language								</div>
+<div class="menuitem" onclick="Responsive_RequestDesktopView();">
+										View desktop website									</div>
+</div>
+</div>
+<div class="mainmenu_footer_spacer"></div>
+<div class="mainmenu_footer">
+<div class="mainmenu_footer_logo"><img src="https://store.cloudflare.steamstatic.com/public/shared/images/responsive/logo_valve_footer.png"/></div>
+								© Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.								<span class="mainmenu_valve_links">
+<a href="https://store.steampowered.com/privacy_agreement/?snr=1_2500_4__global-responsive-menu" target="_blank">Privacy Policy</a>
+									 |  <a href="http://www.valvesoftware.com/legal.htm" target="_blank">Legal</a>
+									 |  <a href="https://store.steampowered.com/subscriber_agreement/?snr=1_2500_4__global-responsive-menu" target="_blank">Steam Subscriber Agreement</a>
+									 |  <a href="https://store.steampowered.com/steam_refunds/?snr=1_2500_4__global-responsive-menu" target="_blank">Refunds</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="responsive_local_menu_tab">
+</div>
+<div class="responsive_page_menu_ctn localmenu">
+<div class="responsive_page_menu" id="responsive_page_local_menu">
+<div class="localmenu_content">
+</div>
+</div>
+</div>
+<div class="responsive_header">
+<div class="responsive_header_content">
+<div id="responsive_menu_logo">
+<img height="100%" src="https://store.cloudflare.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png"/>
+</div>
+<div class="responsive_header_logo">
+<a href="https://store.steampowered.com/?snr=1_2500_4__global-responsive-menu">
+<img alt="STEAM" border="0" height="36" src="https://store.cloudflare.steamstatic.com/public/shared/images/responsive/header_logo.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="responsive_page_content_overlay">
+</div>
+<div class="responsive_fixonscroll_ctn nonresponsive_hidden">
+</div>
+<div class="responsive_page_content">
+<div data-gpnav="columns" id="global_header">
+<div class="content">
+<div class="logo">
+<span id="logo_holder">
+<a href="https://store.steampowered.com/?snr=1_2500_4__global-header">
+<img height="44" src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" width="176"/>
+</a>
+</span>
+</div>
+<div class="supernav_container">
+<a class="menuitem supernav" data-tooltip-content=".submenu_store" data-tooltip-type="selector" href="https://store.steampowered.com/?snr=1_2500_4__global-header">
+		STORE	</a>
+<div class="submenu_store" data-submenuid="store" style="display: none;">
+<a class="submenuitem" href="https://store.steampowered.com/?snr=1_2500_4__global-header">Home</a>
+<a class="submenuitem" href="https://store.steampowered.com/explore/?snr=1_2500_4__global-header">Discovery Queue</a>
+<a class="submenuitem" href="https://steamcommunity.com/my/wishlist/">Wishlist</a>
+<a class="submenuitem" href="https://store.steampowered.com/points/shop/?snr=1_2500_4__global-header">Points Shop</a>
+<a class="submenuitem" href="https://store.steampowered.com/news/?snr=1_2500_4__global-header">News</a>
+<a class="submenuitem" href="https://store.steampowered.com/stats/?snr=1_2500_4__global-header">Stats</a>
+</div>
+<a class="menuitem supernav" data-tooltip-content=".submenu_community" data-tooltip-type="selector" href="https://steamcommunity.com/" style="display: block">
+			COMMUNITY		</a>
+<div class="submenu_community" data-submenuid="community" style="display: none;">
+<a class="submenuitem" href="https://steamcommunity.com/">Home</a>
+<a class="submenuitem" href="https://steamcommunity.com/discussions/">Discussions</a>
+<a class="submenuitem" href="https://steamcommunity.com/workshop/">Workshop</a>
+<a class="submenuitem" href="https://steamcommunity.com/market/">Market</a>
+<a class="submenuitem" href="https://steamcommunity.com/?subsection=broadcasts">Broadcasts</a>
+</div>
+<a class="menuitem" href="https://store.steampowered.com/about/?snr=1_2500_4__global-header">
+				ABOUT			</a>
+<a class="menuitem" href="https://help.steampowered.com/en/">
+		SUPPORT	</a>
+</div>
+<script type="text/javascript">
+		jQuery(function($) {
+			$('#global_header .supernav').v_tooltip({'location':'bottom', 'destroyWhenDone': false, 'tooltipClass': 'supernav_content', 'offsetY':-4, 'offsetX': 1, 'horizontalSnap': 4, 'tooltipParent': '#global_header .supernav_container', 'correctForScreenSize': false});
+		});
+	</script>
+<div id="global_actions">
+<div id="global_action_menu">
+<div class="header_installsteam_btn header_installsteam_btn_green">
+<a class="header_installsteam_btn_content" href="https://store.steampowered.com/about/?snr=1_2500_4__global-header">
+							Install Steam						</a>
+</div>
+<a class="global_action_link" href="https://store.steampowered.com/login/?redir=labs%2F&amp;redir_ssl=1&amp;snr=1_2500_4__global-header">login</a>
+											 | 
+						<span class="pulldown global_action_link" id="language_pulldown" onclick="ShowMenu( this, 'language_dropdown', 'right' );">language</span>
+<div class="popup_block_new" id="language_dropdown" style="display: none;">
+<div class="popup_body popup_menu">
+<a class="popup_menu_item tight" href="?l=schinese" onclick="ChangeLanguage( 'schinese' ); return false;">简体中文 (Simplified Chinese)</a>
+<a class="popup_menu_item tight" href="?l=tchinese" onclick="ChangeLanguage( 'tchinese' ); return false;">繁體中文 (Traditional Chinese)</a>
+<a class="popup_menu_item tight" href="?l=japanese" onclick="ChangeLanguage( 'japanese' ); return false;">日本語 (Japanese)</a>
+<a class="popup_menu_item tight" href="?l=koreana" onclick="ChangeLanguage( 'koreana' ); return false;">한국어 (Korean)</a>
+<a class="popup_menu_item tight" href="?l=thai" onclick="ChangeLanguage( 'thai' ); return false;">ไทย (Thai)</a>
+<a class="popup_menu_item tight" href="?l=bulgarian" onclick="ChangeLanguage( 'bulgarian' ); return false;">Български (Bulgarian)</a>
+<a class="popup_menu_item tight" href="?l=czech" onclick="ChangeLanguage( 'czech' ); return false;">Čeština (Czech)</a>
+<a class="popup_menu_item tight" href="?l=danish" onclick="ChangeLanguage( 'danish' ); return false;">Dansk (Danish)</a>
+<a class="popup_menu_item tight" href="?l=german" onclick="ChangeLanguage( 'german' ); return false;">Deutsch (German)</a>
+<a class="popup_menu_item tight" href="?l=spanish" onclick="ChangeLanguage( 'spanish' ); return false;">Español - España (Spanish - Spain)</a>
+<a class="popup_menu_item tight" href="?l=latam" onclick="ChangeLanguage( 'latam' ); return false;">Español - Latinoamérica (Spanish - Latin America)</a>
+<a class="popup_menu_item tight" href="?l=greek" onclick="ChangeLanguage( 'greek' ); return false;">Ελληνικά (Greek)</a>
+<a class="popup_menu_item tight" href="?l=french" onclick="ChangeLanguage( 'french' ); return false;">Français (French)</a>
+<a class="popup_menu_item tight" href="?l=italian" onclick="ChangeLanguage( 'italian' ); return false;">Italiano (Italian)</a>
+<a class="popup_menu_item tight" href="?l=hungarian" onclick="ChangeLanguage( 'hungarian' ); return false;">Magyar (Hungarian)</a>
+<a class="popup_menu_item tight" href="?l=dutch" onclick="ChangeLanguage( 'dutch' ); return false;">Nederlands (Dutch)</a>
+<a class="popup_menu_item tight" href="?l=norwegian" onclick="ChangeLanguage( 'norwegian' ); return false;">Norsk (Norwegian)</a>
+<a class="popup_menu_item tight" href="?l=polish" onclick="ChangeLanguage( 'polish' ); return false;">Polski (Polish)</a>
+<a class="popup_menu_item tight" href="?l=portuguese" onclick="ChangeLanguage( 'portuguese' ); return false;">Português (Portuguese)</a>
+<a class="popup_menu_item tight" href="?l=brazilian" onclick="ChangeLanguage( 'brazilian' ); return false;">Português - Brasil (Portuguese - Brazil)</a>
+<a class="popup_menu_item tight" href="?l=romanian" onclick="ChangeLanguage( 'romanian' ); return false;">Română (Romanian)</a>
+<a class="popup_menu_item tight" href="?l=russian" onclick="ChangeLanguage( 'russian' ); return false;">Русский (Russian)</a>
+<a class="popup_menu_item tight" href="?l=finnish" onclick="ChangeLanguage( 'finnish' ); return false;">Suomi (Finnish)</a>
+<a class="popup_menu_item tight" href="?l=swedish" onclick="ChangeLanguage( 'swedish' ); return false;">Svenska (Swedish)</a>
+<a class="popup_menu_item tight" href="?l=turkish" onclick="ChangeLanguage( 'turkish' ); return false;">Türkçe (Turkish)</a>
+<a class="popup_menu_item tight" href="?l=vietnamese" onclick="ChangeLanguage( 'vietnamese' ); return false;">Tiếng Việt (Vietnamese)</a>
+<a class="popup_menu_item tight" href="?l=ukrainian" onclick="ChangeLanguage( 'ukrainian' ); return false;">Українська (Ukrainian)</a>
+<a class="popup_menu_item tight" href="http://translation.steampowered.com" target="_blank">Help us translate Steam</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="responsive_store_nav_ctn"></div><div data-cart-banner-spot="1"></div>
+<div class="responsive_page_template_content">
+<script type="text/javascript">
+	var g_AccountID = 0;
+	var g_sessionID = "c6900a35e97c1a9998d9b5b6";
+	var g_ServerTime = 1614796389;
+
+	$J( InitMiniprofileHovers );
+
+			GStoreItemData.AddNavParams({
+			__page_default: "1_2500_4_",
+			storemenu_recommendedtags: "1_2500_4__17"		});
+		GDynamicStore.Init( 0, false, "", {"primary_language":null,"secondary_languages":null,"platform_windows":null,"platform_mac":null,"platform_linux":null,"hide_adult_content_violence":null,"hide_adult_content_sex":null,"timestamp_updated":null,"hide_store_broadcast":null,"review_score_preference":null,"timestamp_content_descriptor_preferences_updated":null}, 'BR' );
+		GStoreItemData.SetCurrencyFormatter( function( nValueInCents, bWholeUnitsOnly ) { var fmt = function( nValueInCents, bWholeUnitsOnly ) {	var format = v_numberformat( nValueInCents / 100, bWholeUnitsOnly ? 0 : 2, ",", "."); return format; };var strNegativeSymbol = '';return strNegativeSymbol + "R$ " + fmt( nValueInCents, bWholeUnitsOnly );} );
+		GStoreItemData.SetCurrencyMinPriceIncrement( 1 );
+	</script>
+<div class="page_content_ctn labs">
+<div class="page_content">
+<div>
+<img height="108px" src="https://cdn.cloudflare.steamstatic.com/store/labs/main/images/steam_labs_logo.svg" style="margin-top: 15px; margin-left: 6px;"/>
+</div>
+<div class="labs-content">
+<!-- Experiment capsules. -->
+<div class="left-column">
+<h1>Latest Experiments</h1>
+<!-- Redesigned Content Hubs -->
+<!-- Faceted browse-->
+<div class="capsule">
+<div class="capsule-banner">
+<a href="https://steamcommunity.com/groups/SteamLabs/partnerevents/view/2914357483082955840">
+<div class="capsule-banner-ctn">
+<img src="https://cdn.cloudflare.steamstatic.com/store/labs/main/images/capsule_banner_explore_sales.jpg"/>
+</div>
+</a>
+</div>
+<div class="exp_text_ctn">
+<h2>012 Exploring Sales</h2>
+<p>
+<b>December 23, 2020</b> - Explore sales using <a href="https://steamcommunity.com/groups/SteamLabs/partnerevents/view/2914357483082955840">new exploration tools</a> designed to help you find just the right game.						</p>
+<div class="experiment-buttons">
+<a class="experiment-button" href="https://store.steampowered.com/sale/steamgamefestival">Try the Sale Exploration Experiment</a>
+</div>
+</div>
+</div>
+<!-- Redesigned Browse Nav-->
+<div class="capsule">
+<div class="capsule-banner">
+<a href="https://steamcommunity.com/groups/SteamLabs/announcements/detail/2379537344925141078">
+<div class="capsule-banner-ctn">
+<img src="https://cdn.cloudflare.steamstatic.com/store/labs/main/images/capsule_banner_nav_experiment.jpg"/>
+</div>
+</a>
+</div>
+<div class="exp_text_ctn">
+<h2>010 Browsing Steam</h2>
+<p>
+<b>9 December, 2020</b> - Browse the store using <a href="https://steamcommunity.com/groups/SteamLabs/announcements/detail/2379537344925141078">new points of entry</a> including new &amp; noteworthy charts, detailed genres, themes, and player support.						</p>
+<div class="experiment-buttons">
+<a class="experiment-button" href="https://store.steampowered.com/labs/browse?snr=1_2500_4_">Try the Store Navigation Experiment</a>
+</div>
+</div>
+</div>
+<!-- Chat Filtering -->
+<div class="capsule">
+<div class="capsule-banner ds_no_flags">
+<a href="https://steamcommunity.com/games/593110/partnerevents/view/2855803154584367415">
+<div class="capsule-banner-ctn">
+<div class="shipped">
+                                    Shipped!                                </div>
+<img src="https://cdn.cloudflare.steamstatic.com/store/labs/main/images/capsule_banner_textfilter.jpg"/>
+</div>
+</a>
+</div>
+<div class="exp_text_ctn">
+<h2>011 Text Filtering</h2>
+<p>
+							In this Labs experiment, particpants helped shape how <a href="https://steamcommunity.com/games/593110/partnerevents/view/2855803154584367415">we've empowered players</a> to choose the words you wish to see from others in Steam Chat and supporting games, like CS:GO, Destiny 2, and DOTA 2.						</p>
+</div>
+</div>
+<!-- Search Queries-->
+<div class="capsule">
+<div class="capsule-banner">
+<a href="https://steamcommunity.com/games/593110/partnerevents/view/1792935884902997962">
+<div class="capsule-banner-ctn">
+<img src="https://cdn.cloudflare.steamstatic.com/store/labs/main/images/capsule_banner_search41.jpg"/>
+</div>
+</a>
+</div>
+<div class="exp_text_ctn">
+<h2>004.1 Search Query Expansion</h2>
+<p>
+<b>April 21, 2020</b> - Search, now with smarter results for tag-based searches.                        </p>
+<div class="experiment-buttons">
+<a class="experiment-button" href="https://store.steampowered.com/labs/search?snr=1_2500_4_">Try Improved Tag Searches Now</a>
+</div>
+</div>
+</div>
+<!-- News Hub -->
+<div class="capsule">
+<div class="capsule-banner ds_no_flags" data-ds-appid="1254040">
+<a href="https://store.steampowered.com/news/?snr=1_2500_4_">
+<div class="capsule-banner-ctn">
+<div class="shipped">
+		                            Shipped!                                </div>
+<img src="https://cdn.cloudflare.steamstatic.com/store/labs/main/images/capsule_banner_news_hub.jpg?v=3"/>
+</div>
+</a>
+</div>
+<div class="exp_text_ctn">
+<h2>009 News Hub</h2>
+<p>
+<b>March 5, 2020</b> - Whether you're at work, on the bus, or playing at home, you can now browse a personalized hub to easily find the updates, announcements, and events from the games you play and games you are interested in.                        </p>
+<div class="experiment-buttons">
+<a class="experiment-button" href="https://store.steampowered.com/news/?snr=1_2500_4_">Try News Hub Now</a>
+<a class="experiment-button" href="https://store.steampowered.com/news/app/593110?emclan=103582791457287600&amp;emgid=2881704558990580296">Read more</a>
+</div>
+</div>
+</div>
+<!-- Play Next -->
+<div class="capsule">
+<div class="capsule-banner ds_no_flags" data-ds-appid="1247770">
+<a href="https://store.steampowered.com/labs?snr=1_2500_4_">
+<div class="capsule-banner-ctn">
+<div class="shipped">
+                                    Shipped!								</div>
+<a href="https://steamcommunity.com/games/593110/announcements/detail/2173495126269399731">
+<img src="https://cdn.cloudflare.steamstatic.com/store/labs/main/images/capsule_banner_play_next.jpg?v=3"/>
+</a>
+</div>
+</a>
+</div>
+<div class="exp_text_ctn">
+<h2>008 Play Next</h2>
+<p>
+                            Now available as a shelf in your Steam client library                        </p>
+</div>
+</div>
+<!-- Trending Reviews -->
+<div class="capsule">
+<div class="capsule-banner ds_no_flags" data-ds-appid="1163670">
+<a href="https://store.steampowered.com/communityrecommendations/?snr=1_2500_4_">
+<div class="capsule-banner-ctn">
+<div class="shipped">
+                                    Shipped!                                </div>
+<img src="https://cdn.cloudflare.steamstatic.com/store/labs/main/images/capsule_banner_trending_reviews.jpg?v=2"/>
+</div>
+</a>
+</div>
+<div class="exp_text_ctn">
+<h2>006 Community Recommendations</h2>
+<p>
+							Discover games the Steam Community is currently enjoying in a feed of recent reviews.						</p>
+<div class="experiment-buttons">
+<a class="experiment-button" href="https://store.steampowered.com/communityrecommendations/?snr=1_2500_4_">Try the Community Recommendations</a>
+</div>
+</div>
+</div>
+<!-- Deep Dive -->
+<div class="capsule">
+<div class="capsule-banner ds_no_flags" data-ds-appid="1163750">
+<a href="https://store.steampowered.com/labs?snr=1_2500_4_">
+<div class="capsule-banner-ctn">
+<div class="shelved">
+                                    Shelved                                </div>
+<img src="https://cdn.cloudflare.steamstatic.com/store/labs/main/images/capsule_banner_deep_dive.jpg?v=2"/>
+</div>
+</a>
+</div>
+<div class="exp_text_ctn">
+<h2>005 Deep Dive</h2>
+<p>
+								Select a game and discover others like it, from close matches to little-known but well-loved titles. Explore a path through the depths of Steam, charting a deep dive of your very own.							</p>
+</div>
+</div>
+<!-- Search Capsule-->
+<div class="capsule">
+<div class="capsule-banner">
+<a href="https://store.steampowered.com/newshub/app/593110/view/1714119088658959583">
+<div class="capsule-banner-ctn">
+<div class="shipped">
+									Shipped!								</div>
+<img src="https://cdn.cloudflare.steamstatic.com/store/labs/main/images/capsule_banner_search.jpg"/>
+</div>
+</a>
+</div>
+<div class="exp_text_ctn">
+<h2>004 Search | <span class="experiment-name">Filter those results, then scroll-lll!</span></h2>
+<p><b>September 5th, 2019</b> - Discover just what you're looking for with more filters and infinte scroll in search. This experiment will set your browser into Labs Mode, allowing you to access its features whenever you search on Steam. Labs Mode is remembered per browser and easy to exit via the banner at the top. Happy searching! </p> </div>
+</div>
+<!-- Ultracast Capsule -->
+<div class="capsule">
+<div class="capsule-banner">
+<a href="https://store.steampowered.com/labs?snr=1_2500_4_">
+<div class="capsule-banner-ctn">
+<div class="shelved">
+                                    Shelved                                </div>
+<img src="https://cdn.cloudflare.steamstatic.com/store/labs/main/images/capsule_banner_ultracast.jpg"/>
+</div>
+</a>
+</div>
+<div class="exp_text_ctn">
+<h2>003 Automatic Show | <span class="experiment-name">An automated show about games</span></h2>
+<p><b>July 11th, 2019</b> - What if Steam could magically generate a show about the latest and greatest games each day? The automatic show is like one of those cable shopping channels without the super-absorbent chamois cloths.</p><p>Check out the half-hour Episode #1.</p> </div>
+</div>
+<!-- Recommender Capsule -->
+<div class="capsule ds_no_flags" data-ds-appid="1156220">
+<div class="capsule-banner">
+<a href="https://store.steampowered.com/recommender?snr=1_2500_4_">
+<div class="capsule-banner-ctn">
+<div class="shipped">
+                                    Shipped!                                </div>
+<img src="https://cdn.cloudflare.steamstatic.com/store/labs/main/images/capsule_banner_recommender.jpg"/>
+</div>
+</a>
+</div>
+<div class="exp_text_ctn">
+<h2>002 Interactive Recommender | <span class="experiment-name">The machine learning curator</span></h2>
+<p><b>July 11th, 2019</b> - This experiment looks at how much you've played each game in your Steam library, and uses the magic of machine learning to recommend games you might like. Filter your results by picking games that are popular or niche, and drill down by release date and tags.</p>
+<div class="experiment-buttons">
+<a class="experiment-button" href="https://store.steampowered.com/recommender?snr=1_2500_4_">Try the Interactive Recommender Experiment</a>
+</div>
+</div>
+</div>
+<!-- MicroTrailers Capsule -->
+<div class="capsule">
+<div class="capsule-banner">
+<a href="https://store.steampowered.com/labs/microtrailers?snr=1_2500_4_">
+<div class="capsule-banner-ctn">
+<img src="https://cdn.cloudflare.steamstatic.com/store/labs/main/images/capsule_banner_microtrailers.jpg"/>
+</div>
+</a>
+</div>
+<div class="exp_text_ctn">
+<h2>001 Micro Trailers | <span class="experiment-name">A six-second trailer for every game</span></h2>
+<p><b>July 11th, 2019</b> - Absorb every game in the Steam catalog in just seconds. Micro Trailers are six-second looping videos designed to quickly inform viewers about titles on Steam with a presentation that's easy to skim. This experiment is a fancier version of the Twitter bot of the same name.</p>
+<div class="experiment-buttons">
+<a class="experiment-button" href="https://store.steampowered.com/labs/microtrailers?snr=1_2500_4_">Try the Micro Trailers Experiment</a>
+</div>
+</div>
+</div>
+</div>
+<div class="right-column">
+<div>
+<div class="about_welcome">
+<h1>Welcome to Steam Labs</h1>
+<div>
+<div class="right-column-box">
+<p>Every year, we create dozens of experiments around discoverability, video, machine learning, and more. You know who we thought might enjoy seeing them? Everyone.</p><p>For the first time, you can try, share, and break them, then <a href="https://steamcommunity.com/groups/SteamLabs/discussions/2/">share your feedback</a> with the developers who create them.</p> </div>
+</div>
+</div>
+<div class="about_active">
+<h1>Active Experiments</h1>
+<div class="right-column-box">
+<div class="active-experiments-row">
+<div class="active-experiments-icon">
+<a href="https://store.steampowered.com/">
+<img src="https://cdn.cloudflare.steamstatic.com/store/labs/main/images/012.png?v=1"/>
+</a>
+</div>
+<div class="active-experiments-description">
+<a href="https://store.steampowered.com/sale/winter2020_coop">New Sale Exploration Tools</a> - Browse sales by visuals, themes, moods, and more.                                    </div>
+</div>
+<div class="active-experiments-row">
+<div class="active-experiments-icon">
+<a href="https://store.steampowered.com/labs/browse?snr=1_2500_4_">
+<img src="https://cdn.cloudflare.steamstatic.com/store/labs/main/images/nav_icon.png?v=1"/>
+</a>
+</div>
+<div class="active-experiments-description">
+<a href="https://store.steampowered.com/labs/browse?snr=1_2500_4_">New Browse Views</a> - Browse Steam by charts, detailed genres, themes and more.                                    </div>
+</div>
+<div class="active-experiments-row">
+<div class="active-experiments-icon">
+<a href="https://store.steampowered.com/labs/search?snr=1_2500_4_">
+<img src="https://cdn.cloudflare.steamstatic.com/store/labs/main/images/search41_icon.png?v=1"/>
+</a>
+</div>
+<div class="active-experiments-description">
+<a href="https://store.steampowered.com/labs/search?snr=1_2500_4_">Search Query Expansion for Tags</a> - Search, now with smarter results for tag-based searches.                                    </div>
+</div>
+<div class="active-experiments-row">
+<div class="active-experiments-icon">
+<a href="https://store.steampowered.com/labs/microtrailers?snr=1_2500_4_">
+<img src="https://cdn.cloudflare.steamstatic.com/store/labs/main/images/microtrailers_icon.png?v=3"/>
+</a>
+</div>
+<div class="active-experiments-description">
+<a href="https://store.steampowered.com/labs/microtrailers?snr=1_2500_4_">Micro Trailers</a> - A six-second trailer for every Steam game								</div>
+</div>
+</div>
+</div>
+<div class="about_more">
+<h1>More About Steam Labs</h1>
+<div class="right-column-box">
+<h2>Rough, Ephemeral Experiments</h2>
+<p>
+                                These are works in progress. Some of them may turn out great. Others, we may toss out. We hope that most will be improved with your feedback and go on to be a part of Steam. This is the way of Steam Labs.                            </p>
+<h2>Why?</h2>
+<p>
+                                We're always trying new things with Steam, but often only share them with the world when they're ready to be made a part of the platform. Steam Labs allows us to share these ideas earlier and improve them with your feedback before making them official.                            </p>
+<h2>What's Next?</h2>
+<p>
+                                Like all new Steam features, Steam Labs is itself an experiment, in that it is a work in progress which will only get better with informed iteration. We hope you'll <a href="https://steamcommunity.com/groups/SteamLabs/discussions/2/">share your ideas and feedback in the discussions</a>. We look forward to experimenting together.                            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> <!-- responsive_page_legacy_content -->
+<div class="" id="footer_spacer" style=""></div>
+<div class="" id="footer">
+<div class="footer_content">
+<div class="rule"></div>
+<div id="footer_nav">
+<span class="pulldown btnv6_blue_hoverfade btn_small" id="footer_steam_pulldown">
+<span>ABOUT STEAM</span>
+</span>
+<div class="popup_block_new" id="footer_steam_dropdown" style="display: none;">
+<div class="popup_body popup_menu">
+<a class="popup_menu_item" href="https://store.steampowered.com/about/?snr=1_44_44__22">
+					What is Steam?				</a>
+<!--
+					<a class="popup_menu_item" href="">
+						Download Steam now					</a>
+					-->
+<a class="popup_menu_item" href="https://support.steampowered.com/kb_article.php?p_faqid=549#gifts" rel="noreferrer" target="_blank">
+					Gifting on Steam				</a>
+<a class="popup_menu_item" href="https://steamcommunity.com/?snr=1_44_44__22">
+					The Steam Community				</a>
+</div>
+</div>
+<span class="pulldown btnv6_blue_hoverfade btn_small" id="footer_valve_pulldown">
+<span>ABOUT VALVE</span>
+</span>
+<div class="popup_block_new" id="footer_valve_dropdown" style="display: none;">
+<div class="popup_body popup_menu">
+<a class="popup_menu_item" href="http://www.valvesoftware.com/about.html" rel="noreferrer" target="_blank">
+					About Valve				</a>
+<a class="popup_menu_item" href="http://www.valvesoftware.com/business/" rel="noreferrer" target="_blank">
+					Business Solutions				</a>
+<a class="popup_menu_item" href="http://www.steampowered.com/steamworks/" rel="noreferrer" target="_blank">
+					Steamworks				</a>
+<a class="popup_menu_item" href="http://www.valvesoftware.com/jobs.html" rel="noreferrer" target="_blank">
+					Jobs				</a>
+</div>
+</div>
+<span class="pulldown btnv6_blue_hoverfade btn_small" id="footer_help_pulldown">
+<span>HELP</span>
+</span>
+<div class="popup_block_new" id="footer_help_dropdown" style="display: none;">
+<div class="popup_body popup_menu">
+<a class="popup_menu_item" href="https://help.steampowered.com/en/?snr=1_44_44__23">
+					Support				</a>
+<a class="popup_menu_item" href="https://store.steampowered.com/forums/?snr=1_44_44__23" rel="noreferrer" target="_blank">
+					Forums				</a>
+<a class="popup_menu_item" href="https://store.steampowered.com/stats/?snr=1_44_44__23" rel="noreferrer" target="_blank">
+					Stats				</a>
+</div>
+</div>
+<span class="pulldown btnv6_blue_hoverfade btn_small" id="footer_feeds_pulldown">
+<span>NEWS FEEDS</span>
+</span>
+<div class="popup_block_new" id="footer_feeds_dropdown" style="display: none;">
+<div class="popup_body popup_menu">
+<a class="popup_menu_item" href="https://store.steampowered.com/feeds/news.xml">
+<img align="top" alt="" border="0" height="13" src="https://store.cloudflare.steamstatic.com/public/images/ico/ico_rss2.gif" width="13"/>  Steam News				</a>
+<a class="popup_menu_item" href="https://store.steampowered.com/feeds/newreleases.xml">
+<img align="top" alt="" border="0" height="13" src="https://store.cloudflare.steamstatic.com/public/images/ico/ico_rss2.gif" width="13"/>  Game Releases				</a>
+<a class="popup_menu_item" href="https://store.steampowered.com/feeds/daily_deals.xml">
+<img align="top" alt="" border="0" height="13" src="https://store.cloudflare.steamstatic.com/public/images/ico/ico_rss2.gif" width="13"/>  Daily Deals				</a>
+</div>
+</div>
+<div style="clear: left;"></div>
+<script type="text/javascript">
+			RegisterFlyout( 'footer_genre_pulldown', 'footer_genre_dropdown', null, null, true );
+			RegisterFlyout( 'footer_steam_pulldown', 'footer_steam_dropdown', null, null, true );
+			RegisterFlyout( 'footer_valve_pulldown', 'footer_valve_dropdown', null, null, true );
+			RegisterFlyout( 'footer_help_pulldown', 'footer_help_dropdown', null, null, true );
+			RegisterFlyout( 'footer_feeds_pulldown', 'footer_feeds_dropdown', null, null, true );
+		</script>
+</div>
+<br/>
+<div class="rule"></div>
+<div id="footer_logo_steam"><img alt="Valve Software" border="0" src="https://store.cloudflare.steamstatic.com/public/images/v6/logo_steam_footer.png"/></div>
+<div id="footer_logo"><a href="http://www.valvesoftware.com" rel="noreferrer" target="_blank"><img alt="Valve Software" border="0" src="https://store.cloudflare.steamstatic.com/public/images/footerLogo_valve_new.png"/></a></div>
+<div id="footer_text">
+<div>© 2021 Valve Corporation.  All rights reserved.  All trademarks are property of their respective owners in the US and other countries.</div>
+<div>VAT included in all prices where applicable.  
+
+            <a href="https://store.steampowered.com/privacy_agreement/?snr=1_44_44_" rel="noreferrer" target="_blank">Privacy Policy</a>
+              |  
+            <a href="https://store.steampowered.com/legal/?snr=1_44_44_" rel="noreferrer" target="_blank">Legal</a>
+              |  
+            <a href="https://store.steampowered.com/subscriber_agreement/?snr=1_44_44_" rel="noreferrer" target="_blank">Steam Subscriber Agreement</a>
+              |  
+            <a href="https://store.steampowered.com/steam_refunds/?snr=1_44_44_" rel="noreferrer" target="_blank">Refunds</a>
+</div>
+<div class="responsive_optin_link">
+<div class="btn_medium btnv6_grey_black" onclick="Responsive_RequestMobileView()">
+<span>View mobile website</span>
+</div>
+</div>
+</div>
+<div style="clear: left;"></div>
+<br/>
+<div class="rule"></div>
+<div class="valve_links">
+<a href="http://www.valvesoftware.com/about.html" rel="noreferrer" target="_blank">About Valve</a>
+          |  <a href="http://www.steampowered.com/steamworks/" rel="noreferrer" target="_blank">Steamworks</a>
+          |  <a href="http://www.valvesoftware.com/jobs.html" rel="noreferrer" target="_blank">Jobs</a>
+          |  <a href="https://partner.steamgames.com/steamdirect" rel="noreferrer" target="_blank">Steam Distribution</a>
+        		  |  <a href="https://store.steampowered.com/digitalgiftcards/?snr=1_44_44_" rel="noreferrer" target="_blank">Gift Cards</a>
+		  |  <a href="https://steamcommunity.com/linkfilter/?url=http://www.facebook.com/Steam" rel="noopener" target="_blank"><img src="https://store.cloudflare.steamstatic.com/public/images/ico/ico_facebook.gif"/> Steam</a>
+		  |  <a href="http://twitter.com/steam" rel="noreferrer" target="_blank"><img src="https://store.cloudflare.steamstatic.com/public/images/ico/ico_twitter.gif"/> @steam</a>
+</div>
+</div>
+</div>
+</div> <!-- responsive_page_content -->
+</div> <!-- responsive_page_frame -->
+</body>
+</html>
