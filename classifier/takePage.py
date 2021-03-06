@@ -5,11 +5,19 @@ def downloadPage(url, x):
   headers = {'user-agent': 'Italo'};
   r = rq.get(url, headers=headers);
   page = BeautifulSoup(r.text, "html.parser");
-  with open("steam/positivePages/page"+str(x)+".html", "w") as file:
+  with open("epic/positivePages/page"+str(x)+".html", "w") as file:
       file.write(str(page));
       
-urls = ["https://store.steampowered.com/app/367520/Hollow_Knight/",
-"https://store.steampowered.com/app/762840/Maquette/","https://store.steampowered.com/app/1361320/The_Room_4_Old_Sins/","https://store.steampowered.com/app/860510/Little_Nightmares_II/","https://store.steampowered.com/app/945360/Among_Us/","https://store.steampowered.com/app/105600/Terraria/","https://store.steampowered.com/app/1215270/Down_the_Rabbit_Hole/","https://store.steampowered.com/app/322500/SUPERHOT/","https://store.steampowered.com/app/262060/Darkest_Dungeon/","https://store.steampowered.com/app/1097150/Fall_Guys_Ultimate_Knockout/"];
+urls = ["https://www.epicgames.com/store/pt-BR/p/curse-of-the-dead-gods",
+"https://www.epicgames.com/store/pt-BR/p/monster-jam-steel-titans-2",
+"https://www.epicgames.com/store/pt-BR/p/star-renegades",
+"https://www.epicgames.com/store/pt-BR/p/scrapnaut",
+"https://www.epicgames.com/store/pt-BR/p/the-dungeon-of-naheulbeuk",
+"https://www.epicgames.com/store/pt-BR/p/hitman-3",
+"https://www.epicgames.com/store/pt-BR/p/rocket-league",
+"https://www.epicgames.com/store/pt-BR/p/grand-theft-auto-v",
+"https://www.epicgames.com/store/pt-BR/p/tales-from-the-borderlands",
+"https://www.epicgames.com/store/pt-BR/p/anno-2070"];
 x=1;
 for url in urls:
   downloadPage(url, x)
