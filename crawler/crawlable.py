@@ -1,2 +1,0 @@
-class Crawlable:
-    pass
