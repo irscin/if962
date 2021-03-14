@@ -1,4 +1,4 @@
-from .crawlable_reference import CrawlableReference
+from crawler.crawlable_reference import CrawlableReference
 from .crawlable_from import CrawlableFrom
 from download import UrlDownloader
 

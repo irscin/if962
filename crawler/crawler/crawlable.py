@@ -1,9 +1,10 @@
 class Crawlable:
-    def __init__(self, data=None):
-        self.data = data
+    def __init__(self, anchors=None, content=None):
+        self.anchors = anchors
+        self.content = content
 
     def get_anchors(self):
-        pass
+        return self.anchors
 
     def get_content(self):
-        pass
+        return self.content

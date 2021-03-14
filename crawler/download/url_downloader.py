@@ -1,4 +1,7 @@
+import requests as rq
+
+
 class UrlDownloader:
     @staticmethod
     def download_text(url):
-        pass
+        return rq.get(url.text).text

@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/crawler/bs_crawlable_reference.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/crawler/crawler.py">
           <value>
             <Attribute>

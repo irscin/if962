@@ -1,13 +1,14 @@
 class Crawler:
     def __init__(self, crawler_package):
         self.crawler_package = crawler_package
+        self.visited_urls = set()
 
     def crawl(self):
         frontier = self.crawler_package.frontier
         chooser = self.crawler_package.frontier_item_chooser
         while not frontier.empty():
-            crawl_result = self.consume(chooser.choose_from(frontier).get())
-            self.adjust_to_result(crawl_result)
+            next_crawlable_reference = chooser.choose_from(frontier)
+            self.adjust_to_result(next_crawlable_reference)
 
-    def consume(self, crawlable):
-        return self.crawler_package.crawlable_consumer.consume(crawlable)
+    def adjust_to_result(self, crawlable_reference):
+        pass
