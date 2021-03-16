@@ -1,5 +1,5 @@
-from .crawlable import Crawlable
-from .content import Content
+from crawler.crawlable import Crawlable
+from crawler.content import Content
 from reading import AnchorFrom
 import bs4
 

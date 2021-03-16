@@ -7,8 +7,8 @@ class Crawler:
         frontier = self.crawler_package.frontier
         chooser = self.crawler_package.frontier_item_chooser
         while not frontier.empty():
-            next_crawlable_reference = chooser.choose_from(frontier)
-            self.adjust_to_result(next_crawlable_reference)
+            next_crawlable_reference_with_meta_info = chooser.choose_from(frontier)
+            self.adjust_to_result(next_crawlable_reference_with_meta_info)
 
     def adjust_to_result(self, crawlable_reference):
         pass
