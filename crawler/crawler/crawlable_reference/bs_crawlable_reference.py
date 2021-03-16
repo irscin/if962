@@ -1,5 +1,5 @@
 from crawler.crawlable_reference.crawlable_reference import CrawlableReference
-from crawler.crawlable_from import CrawlableFrom
+from crawler.bs_crawlable_from import BsCrawlableFrom
 import requests as rq
 
 
@@ -9,4 +9,4 @@ class BsCrawlableReference(CrawlableReference):
         self.url = url
 
     def get(self):
-        return CrawlableFrom.text(rq.get(self.url.text).text)
+        return BsCrawlableFrom.text(rq.get(self.url.text).text)
