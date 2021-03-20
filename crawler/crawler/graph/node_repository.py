@@ -8,5 +8,8 @@ class NodeRepository:
     def add(self, node=Node()):
         pass
 
+    def empty(self):
+        pass
+
     def __contains__(self, item):
         pass

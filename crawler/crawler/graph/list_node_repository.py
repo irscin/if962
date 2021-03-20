@@ -10,5 +10,8 @@ class ListNodeRepository(NodeRepository):
     def add(self, node=Node()):
         self.nodes.append(node)
 
+    def empty(self, item):
+        return len(self.nodes) == 0
+
     def __contains__(self, item):
         return item in self.nodes

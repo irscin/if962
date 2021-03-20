@@ -10,5 +10,8 @@ class ListEdgeRepository(EdgeRepository):
     def add(self, edge=Edge()):
         self.edges.append(edge)
 
+    def empty(self):
+        return len(self.edges) == 0
+
     def __contains__(self, item):
         return item in self.edges

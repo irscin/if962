@@ -1,14 +1,15 @@
+from .crawler_package import CrawlerPackage
+
+
 class Crawler:
-    def __init__(self, crawler_package):
+    def __init__(self, crawler_package=CrawlerPackage()):
         self.crawler_package = crawler_package
         self.visited_urls = set()
 
     def crawl(self):
-        frontier = self.crawler_package.frontier
-        chooser = self.crawler_package.frontier_item_chooser
-        while not frontier.empty():
-            next_crawlable_reference_with_meta_info = chooser.choose_from(frontier)
-            self.adjust_to_result(next_crawlable_reference_with_meta_info)
+        consumer = self.crawler_package.frontier_item_consumer
+        for crawlable_reference_node in consumer:
+            self.adjust_to_result(crawlable_reference_node)
 
-    def adjust_to_result(self, crawlable_reference):
+    def adjust_to_result(self, crawlable_reference_node):
         pass

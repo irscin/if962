@@ -1,13 +1,12 @@
-from .graph import Graph
+from .graph import BfsGraphIterable
+from consuming import CrawlableConsumer
 
 
 class CrawlerPackage:
     def __init__(
         self,
-        frontier=Graph(),
-        frontier_item_chooser=None,
-        crawlable_consumer=None
+        frontier_item_consumer=BfsGraphIterable(),
+        crawlable_consumer=CrawlableConsumer()
     ):
-        self.frontier = frontier
-        self.frontier_item_chooser = frontier_item_chooser
+        self.frontier_item_consumer = frontier_item_consumer
         self.crawlable_consumer = crawlable_consumer

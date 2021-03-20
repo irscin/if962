@@ -1,1 +1,1 @@
-from .bs_anchor_meta_info import MetaInfo
+from .crawlable_reference_with_anchor_meta_info import CrawlableReferenceWithAnchorMetaInfo

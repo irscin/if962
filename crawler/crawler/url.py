@@ -1,3 +1,3 @@
 class Url:
-    def __init__(self, text=None):
+    def __init__(self, text=''):
         self.text = text

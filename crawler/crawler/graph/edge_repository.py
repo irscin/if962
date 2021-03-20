@@ -8,5 +8,8 @@ class EdgeRepository:
     def add(self, edge=Edge()):
         pass
 
+    def empty(self):
+        pass
+
     def __contains__(self, item):
         pass
