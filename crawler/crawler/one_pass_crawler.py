@@ -3,6 +3,7 @@ from crawler.crawlable_reference.bs_crawlable_reference import BsCrawlableRefere
 from crawler.crawlable_reference.meta.crawlable_reference_with_anchor_meta_info import CrawlableReferenceWithAnchorMetaInfo
 from crawler.crawlable_reference.meta.bs_anchor_meta_info import BsAnchorMetaInfo
 
+
 class OnePassCrawler(Crawler):
     def __init__(self, crawler_package):
         self.crawler_package = crawler_package

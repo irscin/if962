@@ -1,10 +1,13 @@
+from .graph import Graph
+
+
 class CrawlerPackage:
     def __init__(
         self,
-        frontier=None,
-        frontier_item_choooser=None,
+        frontier=Graph(),
+        frontier_item_chooser=None,
         crawlable_consumer=None
     ):
         self.frontier = frontier
-        self.frontier_item_chooser = frontier_item_choooser
+        self.frontier_item_chooser = frontier_item_chooser
         self.crawlable_consumer = crawlable_consumer
