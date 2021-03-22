@@ -13,7 +13,8 @@ class BsDownloadConsumer(CrawlableConsumer):
             .url \
             .text \
             .replace('http://', '') \
+            .replace('https://', '') \
             .replace('/', ':')
 
         with open(self.path.path + friendly_url, 'w') as f:
-            f.write(crawlable.content.bs)
+            f.write(str(crawlable.content.bs))

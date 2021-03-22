@@ -1,5 +1,7 @@
 from crawler import BsAnchor
 from crawler import Url
+from urllib.parse import urljoin
+import bs4
 
 
 class BsAnchorFrom:
@@ -10,3 +12,4 @@ class BsAnchorFrom:
             url=Url(bs['href']),
             bs=bs
         )
+

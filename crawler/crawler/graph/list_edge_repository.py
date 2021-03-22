@@ -15,3 +15,6 @@ class ListEdgeRepository(EdgeRepository):
 
     def __contains__(self, item):
         return item in self.edges
+
+    def __iter__(self):
+        return self.edges.__iter__()
