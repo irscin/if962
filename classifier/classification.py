@@ -21,10 +21,12 @@ def takeDataFrames():
 def trainClassifiers():
     bayes = GaussianNB()
     dTree = DecisionTreeClassifier()
+    svm = SVC()
+    regression = LogisticRegression()
     mlp = MLPClassifier()
     
     skf = StratifiedKFold(n_splits = 10)
-    classifierList = [bayes, dTree, mlp]
+    classifierList = [bayes, dTree, svm, regression, mlp]
     dataFrames = takeDataFrames()
     
     accuracy = []
@@ -64,7 +66,7 @@ def trainClassifiers():
             recall.append(recall_fold)
             trainTime.append(trainTime_fold)
     
-    name = ["Naive_bayes", "Decision_tree", "logistic_reg", "mlp"]
+    name = ["Naive_bayes", "Decision_tree", "svm", "logistic_reg", "mlp"]
 
     for i in range(len(classifierList)):
         data_acc = []
