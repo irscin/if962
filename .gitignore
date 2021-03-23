@@ -1,2 +1,3 @@
 crawler/venv/
 crawler/.idea/
+**/__pycache__/

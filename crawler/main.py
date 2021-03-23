@@ -7,11 +7,11 @@ from crawler.crawlable_reference import BsCrawlableReference
 from crawler.crawlable_reference.meta.crawlable_reference_with_anchor_meta_info import CrawlableReferenceWithAnchorMetaInfo
 from crawler.one_pass_crawler import OnePassCrawler
 from crawler import Url
-from consuming import BsDownloadConsumer, Path
+from consuming import BsDownloadConsumer, Path, CounterNamer
 
 
 def crawlable_reference_with_anchor_meta_info_from_url(url):
-    crawlable_reference = BsCrawlableReference(url, url)
+    crawlable_reference = BsCrawlableReference(url)
 
     return CrawlableReferenceWithAnchorMetaInfo(crawlable_reference, None)
 
@@ -37,7 +37,7 @@ def main_with_args(url, path):
 
     bfs_graph_iterable = BfsGraphIterable(graph, node)
 
-    consumer = BsDownloadConsumer(Path(path))
+    consumer = BsDownloadConsumer(Path(path), CounterNamer())
 
     crawler_package = CrawlerPackage(
         graph=graph,
@@ -49,4 +49,5 @@ def main_with_args(url, path):
 
 
 if __name__ == '__main__':
-    main_with_args('http://google.com', '/home/co/Personal/Study/2020.1/recuperacao-de-informacao/downloads/')
+    #main_with_args('http://google.com', '/home/co/Personal/Study/2020.1/recuperacao-de-informacao/downloads/')
+    main()

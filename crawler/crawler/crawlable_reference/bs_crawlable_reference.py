@@ -5,10 +5,9 @@ import requests as rq
 
 
 class BsCrawlableReference(CrawlableReference):
-    def __init__(self, url=Url(), base_url=Url()):
+    def __init__(self, url=Url()):
         CrawlableReference.__init__(self)
         self.url = url
-        self.base_url = base_url
 
     def get(self):
         crawlable = BsCrawlableFrom.text(rq.get(self.url.text).text)

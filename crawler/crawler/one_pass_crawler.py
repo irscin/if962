@@ -1,4 +1,5 @@
 from .crawler import Crawler
+from crawler import Url
 from crawler.crawlable_reference.bs_crawlable_reference import BsCrawlableReference
 from crawler import BsCrawlable
 from crawler.crawlable_reference.meta.crawlable_reference_with_anchor_meta_info import CrawlableReferenceWithAnchorMetaInfo
@@ -37,14 +38,14 @@ class OnePassCrawler(Crawler):
 
     def references_visited_url(self, crawlable_reference_with_anchor_meta_info):
         return crawlable_reference_with_anchor_meta_info \
-            .anchor_meta_info \
-            .bs_in['href'] in self.visited_urls
+            .crawlable_reference \
+            .url in self.visited_urls
 
     @staticmethod
     def crawlable_references_with_anchors_meta_info_for_crawlable(crawlable=BsCrawlable()):
         return {
             CrawlableReferenceWithAnchorMetaInfo(
-                crawlable_reference=BsCrawlableReference(urljoin(crawlable.url.text, bs_anchor.url)),
+                crawlable_reference=BsCrawlableReference(Url(urljoin(crawlable.url.text, bs_anchor.url.text))),
                 anchor_meta_info=BsAnchorMetaInfo(
                     bs_parent=bs_anchor.bs.parent,
                     bs_in=bs_anchor.bs
