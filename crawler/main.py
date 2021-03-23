@@ -50,4 +50,3 @@ def main_with_args(url, path):
 
 if __name__ == '__main__':
     main_with_args('http://google.com', '/home/co/Personal/Study/2020.1/recuperacao-de-informacao/downloads/')
-3
