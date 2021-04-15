@@ -8,11 +8,17 @@ labels_general = ['Game','Price','OS','Processor','Memory','Graphics','DirectX',
 def get_list_info_steam(name, listReq, l, price, desc):
     info = []
     offset = 0
+    for i in range(0, len(l)):
+        if(i >= len(l)): break
+        if(l[i] == ' '): 
+            del l[i]
     if(name == []): info.append(None)
     else: info.append(name[0])
     if(price == []): info.append(None)
     else: 
         price = re.sub("[\t\n\r]+",'', price[0])
+        price = re.sub("\w+\$", '', price)
+        price = re.sub(" ", '', price)
         info.append(price)
 
     if('Requires a 64-bit processor and operating system' in l): offset = 1
@@ -26,7 +32,9 @@ def get_list_info_steam(name, listReq, l, price, desc):
         if(printou == False): info.append("--")
     if(desc != []): 
         desc = re.sub("[\t\n\r]+", '', desc[0])
-        info.append(desc)
+        desc = re.sub('[\"]+', '\'', desc)
+        desc = re.sub('[,.;]', '', desc)
+        info.append(desc.lower())
     else: info.append("--")
 
     return info
@@ -35,7 +43,10 @@ def get_list_info_up(name, listReq, l, price):
     info = []
     offset = 0
     if(name == None): info.append(None)
-    else: info.append(name[0])
+    else:
+        name = re.sub('[\"]+', '\'', name[0])
+        name = re.sub('[,.;]', '', name)
+        info.append(name.lower())
 
     if(price == None): info.append(None)
     else: info.append(price[0])
@@ -48,6 +59,10 @@ def get_list_info_up(name, listReq, l, price):
             if (listReq[i].lower() == (labels_general[j] + ":").lower()):
                 if(i + offset >= len(l)): info.append("--")
                 else: info.append(l[i + offset].lower())
+                else: 
+                    ins = l[i + offset].lower()
+                    ins = re.sub('[,.;]', '', ins)
+                    info.append(ins)
                 printou = True
                 print(listReq[i], labels_general[j])
         if(printou == False): info.append("--")
