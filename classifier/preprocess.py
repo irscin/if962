@@ -94,10 +94,10 @@ def tokenizeFiles(useStemming, useStopWords, dataName):
     return [vectorizer, vectorizerTfidf]
 
 def main():
-    #putContentInFile("html", "txt")
-    tokenizeFiles(False, False, "token")
+    putContentInFile("html", "txt")
+    """ tokenizeFiles(False, False, "token")
     tokenizeFiles(False, True, "stopwords")
     tokenizeFiles(True, False, "stemming")
-    tokenizeFiles(True, True, "stopNstem")
+    tokenizeFiles(True, True, "stopNstem") """
 
 main()
