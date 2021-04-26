@@ -3,18 +3,21 @@ import re
 
 parser = etree.HTMLParser()
 root = '../classifier/sites/steam/positivePages/page'
-labels_general = ['Game','Price','OS','Processor','Memory','Graphics','DirectX','Storage', 'Description']
+labels = ['game','price','os','processor','ram','graphics','directX','storage', 'description']
 
-def get_list_info_steam(name, listReq, l, price, desc):
+def get_list_info_steam(name, listReq, l, price, desc, url):
     info = []
     offset = 0
     for i in range(0, len(l)):
         if(i >= len(l)): break
         if(l[i] == ' '): 
             del l[i]
-    if(name == []): info.append(None)
-    else: info.append(name[0])
-    if(price == []): info.append(None)
+    if(name == []): info.append("--")
+    else:
+        name = re.sub('[\"]+', '\'', name[0])
+        name = re.sub('[,.;]', '', name)
+        info.append(name.lower())
+    if(price == []): info.append("--")
     else: 
         price = re.sub("[\t\n\r]+",'', price[0])
         price = re.sub("\w+\$", '', price)
@@ -22,12 +25,15 @@ def get_list_info_steam(name, listReq, l, price, desc):
         info.append(price)
 
     if('Requires a 64-bit processor and operating system' in l): offset = 1
-    for j in range(2, len(labels_general)-1):
+    for j in range(2, len(labels_general)-2):
         printou = False
         for i in range(0,len(listReq)):
             if (listReq[i].lower() == (labels_general[j] + ":").lower()):
                 if(i + offset >= len(l)): info.append("--")
-                else: info.append(l[i + offset].lower())
+                else: 
+                    ins = l[i + offset].lower()
+                    ins = re.sub('[,.;]', '', ins)
+                    info.append(ins)
                 printou = True
         if(printou == False): info.append("--")
     if(desc != []): 
@@ -36,7 +42,11 @@ def get_list_info_steam(name, listReq, l, price, desc):
         desc = re.sub('[,.;]', '', desc)
         info.append(desc.lower())
     else: info.append("--")
-
+    #print(info)
+    if(url != []):
+        info.append(url[0])
+    else: info.append("--")
+    #print(url)
     return info
 
 def get_list_info_up(name, listReq, l, price):
